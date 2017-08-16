@@ -26,10 +26,10 @@
 
 		var map = L.map('map', mapopts);
 
-		var watercolorUrl = 'http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg';
+		var watercolorUrl = 'https://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg';
 		var watercolor = L.tileLayer(watercolorUrl, {maxZoom: 18, attribution: 'Map by Stamen, map data OpenStreetMap'}).addTo(map);
 
-		var tonerUrl = 'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png';
+		var tonerUrl = 'https://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png';
 		var toner = L.tileLayer(tonerUrl, {maxZoom: 18, attribution: ''}).addTo(map);
 
 		window.setInterval(function(){
